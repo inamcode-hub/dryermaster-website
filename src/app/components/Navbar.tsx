@@ -13,27 +13,29 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <Link href="/">Dryer Master</Link>
-      </div>
-      <ul className={`${styles.navLinks} ${isOpen ? styles.showMenu : ''}`}>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact</Link>
-        </li>
-      </ul>
-      <div className={styles.hamburger} onClick={toggleMenu}>
-        <span className={styles.bar}></span>
-        <span className={styles.bar}></span>
-        <span className={styles.bar}></span>
-      </div>
-    </nav>
+    <header>
+      <nav className={styles.navbar}>
+        <div className={styles.logo}>
+          <Link href="/">Dryer Master</Link>
+        </div>
+        <ul className={`${styles.navLinks} ${isOpen ? styles.showMenu : ''}`}>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
+        </ul>
+        <div className={styles.hamburger} onClick={toggleMenu}>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+        </div>
+      </nav>
+    </header>
   );
 };
 

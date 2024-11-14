@@ -1,5 +1,10 @@
 import React from 'react';
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Dryer Master | Home',
+  description: '',
+};
 const Home = () => {
   return (
     <section>

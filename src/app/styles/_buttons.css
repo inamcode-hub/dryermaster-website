@@ -1,23 +1,102 @@
+/* Base Button Styles */
 .btn {
-  display: inline-block;
-  padding: var(--spacing-small) var(--spacing-medium);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xs) var(--spacing-md);
   font-size: var(--font-size-small);
   color: var(--white);
   background-color: var(--primary);
   border: none;
   border-radius: var(--radius-medium);
   cursor: pointer;
-  transition: background-color var(--transition);
+  transition: all var(--transition);
+  text-align: center;
+  text-decoration: none;
+  min-width: 120px;
 }
 
 .btn:hover {
   background-color: var(--primary-9);
+  transform: scale(1.05);
 }
 
+/* Secondary Button */
 .btn-secondary {
   background-color: var(--secondary);
+  color: var(--on-secondary);
 }
 
 .btn-secondary:hover {
   background-color: var(--secondary-8);
+}
+
+/* Outline Button */
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+
+/* Warning Button */
+.btn-warning {
+  background-color: var(--warning);
+  color: var(--on-warning);
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.btn-warning:hover {
+  background-color: var(--warning);
+  filter: brightness(0.9); /* Slightly darken on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Success Button */
+.btn-success {
+  background-color: var(--success);
+  color: var(--on-success);
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.btn-success:hover {
+  background-color: var(--success);
+  filter: brightness(0.9); /* Slightly darken on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Disabled Button */
+.btn:disabled {
+  background-color: var(--gray-5);
+  color: var(--gray-7);
+  cursor: not-allowed;
+  border: none;
+}
+
+/* Button Sizes */
+.btn-small {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-x-small);
+}
+
+.btn-large {
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-medium);
+}
+
+/* Full-Width Button */
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Button with Icon */
+.btn-icon {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
 }

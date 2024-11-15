@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import ButtonShowcase from './ButtonShowcase';
 
 export const metadata: Metadata = {
   title: 'Dryer Master | Home',
@@ -72,6 +73,7 @@ const Home = () => {
           </p>
         </footer>
       </div>
+      <ButtonShowcase />
     </section>
   );
 };

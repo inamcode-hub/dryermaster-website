@@ -1,0 +1,21 @@
+/* Button Showcase Container */
+.showcaseContainer {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+/* Title Styling */
+.title {
+  font-size: var(--font-size-heading-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Button Grid Layout */
+.buttonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-md);
+  justify-items: center;
+}

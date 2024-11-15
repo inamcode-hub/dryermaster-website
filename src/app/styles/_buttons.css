@@ -82,6 +82,10 @@
   padding: var(--spacing-xs) var(--spacing-sm);
   font-size: var(--font-size-x-small);
 }
+.btn-medium {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-small);
+}
 
 .btn-large {
   padding: var(--spacing-md) var(--spacing-lg);

@@ -16,6 +16,7 @@ const ButtonShowcase = () => {
           Disabled Button
         </button>
         <button className="btn btn-small">Small Button</button>
+        <button className="btn btn-medium">Medium Button</button>
         <button className="btn btn-large">Large Button</button>
         <button className="btn btn-block">Block Button</button>
         <button className="btn btn-icon">

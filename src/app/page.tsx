@@ -54,8 +54,8 @@ const Home = () => {
 
           <h3>Blockquotes</h3>
           <blockquote>
-            "Efficiency is doing things right; effectiveness is doing the right
-            things."
+            &quot;Efficiency is doing things right; effectiveness is doing the
+            right things.&quot;
             <footer>— Peter Drucker</footer>
           </blockquote>
 

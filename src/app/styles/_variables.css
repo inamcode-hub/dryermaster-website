@@ -35,23 +35,9 @@
   --primary-10: #28407b;
   --primary-11: #1e305c;
   --primary-12: #14203e;
-
-  /* Shades of primary */
-  --primary-1: #f0f3fa;
-  --primary-2: #e0e7f5;
-  --primary-3: #d1daf0;
-  --primary-4: #b2c1e6;
-  --primary-5: #93a8dc;
-  --primary-6: #748fd2;
-  --primary-7: #5676c8;
-  --primary-8: #3c5fb9;
-  --primary-9: #324f9a;
-  --primary-10: #28407b;
-  --primary-11: #1e305c;
-  --primary-12: #14203e;
   --primary-13: #0a101f;
 
-  /* Shades of secondary */
+  /* Shades of Secondary */
   --secondary-1: #c7e4bc;
   --secondary-2: #a9d286;
   --secondary-3: #8bc852;
@@ -76,7 +62,6 @@
   --gray-10: #262626;
   --gray-11: #1f1f1f;
   --gray-12: #141414;
-  --gray-13: #000000;
 
   /* Theme Switcher */
   --background-light: var(--white);
@@ -94,6 +79,14 @@
   --font-size-heading-lg: clamp(2.5rem, 5vw, 4rem);
   --font-size-heading-md: clamp(2rem, 4vw, 3rem);
   --font-size-heading-sm: clamp(1.5rem, 3vw, 2.5rem);
+
+  /* Spacing */
+  --spacing-xs: clamp(4px, 1vw, 8px);
+  --spacing-sm: clamp(8px, 1vw, 16px);
+  --spacing-md: clamp(16px, 2vw, 24px);
+  --spacing-lg: clamp(24px, 3vw, 32px);
+  --spacing-xl: clamp(32px, 4vw, 48px);
+
   /* Z-Index Layers */
   --z-index-base: 0;
   --z-index-dropdown: 1000;
@@ -120,11 +113,6 @@
   --radius-small: 4px;
   --radius-medium: 8px;
   --radius-large: 12px;
-
-  /* Shadows */
-  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
-  --shadow-2: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-  --shadow-3: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
 
   /* Layout and Containers */
   --container-max-width: 1200px;

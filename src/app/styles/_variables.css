@@ -8,10 +8,33 @@
   --info: #3498db;
   --white: #ffffff;
   --black: #000000;
+
+  /* Contrast Colors */
+  --on-primary: #ffffff;
+  --on-secondary: #ffffff;
+  --on-success: #ffffff;
+  --on-warning: #000000;
+  --on-error: #ffffff;
+
+  /* Additional Functional Colors */
   --inlet: #5cb85c;
   --outlet: #428bca;
   --discharge: #f0ad4e;
   --drying: #d9534f;
+
+  /* Shades of Primary */
+  --primary-1: #f0f3fa;
+  --primary-2: #e0e7f5;
+  --primary-3: #d1daf0;
+  --primary-4: #b2c1e6;
+  --primary-5: #93a8dc;
+  --primary-6: #748fd2;
+  --primary-7: #5676c8;
+  --primary-8: #3c5fb9;
+  --primary-9: #324f9a;
+  --primary-10: #28407b;
+  --primary-11: #1e305c;
+  --primary-12: #14203e;
 
   /* Shades of primary */
   --primary-1: #f0f3fa;
@@ -55,22 +78,43 @@
   --gray-12: #141414;
   --gray-13: #000000;
 
+  /* Theme Switcher */
+  --background-light: var(--white);
+  --text-light: var(--black);
+  --background-dark: var(--gray-10);
+  --text-dark: var(--gray-1);
+
   /* Typography */
   --body-font: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   --heading-font: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-size-x-small: 1.3rem;
-  --font-size-small: 1.6rem;
-  --font-size-medium: 1.8rem;
-  --font-size-large: 2.2rem;
-  --font-size-x-large: 2.6rem;
-  --font-size-xx-large: 3.6rem;
 
-  /* Spacing */
-  --spacing-small: 8px;
-  --spacing-medium: 16px;
-  --spacing-large: 24px;
+  --font-size-body: clamp(1rem, 1.2vw, 1.125rem);
+  --font-size-heading-lg: clamp(2.5rem, 5vw, 4rem);
+  --font-size-heading-md: clamp(2rem, 4vw, 3rem);
+  --font-size-heading-sm: clamp(1.5rem, 3vw, 2.5rem);
+  /* Z-Index Layers */
+  --z-index-base: 0;
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal: 1040;
+  --z-index-tooltip: 1050;
+
+  /* Transitions and Animations */
+  --transition: 0.3s ease-in-out;
+  --transition-fast: 0.2s ease-in-out;
+  --transition-medium: 0.5s ease-in-out;
+  --transition-slow: 0.8s ease-in-out;
+  --animation-short: 150ms;
+  --animation-medium: 300ms;
+  --animation-long: 500ms;
+
+  /* Shadows */
+  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
 
   /* Border Radius */
   --radius-small: 4px;
@@ -82,6 +126,25 @@
   --shadow-2: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
   --shadow-3: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
 
-  /* Transitions */
-  --transition: 0.3s ease-in-out;
+  /* Layout and Containers */
+  --container-max-width: 1200px;
+  --container-padding: var(--spacing-md);
+  --grid-gap: var(--spacing-sm);
+
+  /* Buttons */
+  --button-primary-bg: var(--primary);
+  --button-primary-text: var(--on-primary);
+  --button-secondary-bg: var(--secondary);
+  --button-secondary-text: var(--on-secondary);
+  --button-hover-scale: scale(1.05);
+
+  /* Accessibility */
+  --font-size-accessible: 1.25rem;
+  --spacing-accessible: 20px;
+
+  /* Component Dimensions */
+  --navbar-height: 64px;
+  --footer-height: 48px;
+  --input-height: 40px;
+  --border-width: 1px;
 }

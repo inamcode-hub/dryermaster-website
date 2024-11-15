@@ -1,39 +1,37 @@
-// app/components/Navbar.tsx
-
-'use client';
-import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './Navbar.module.css';
 
-const Navbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+const Navbar = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href="/">Dryer Master</Link>
         </div>
-        <ul className={`${styles.navLinks} ${isOpen ? styles.showMenu : ''}`}>
+        {/* Hidden checkbox for toggling menu */}
+        <input type="checkbox" id="menu-toggle" className={styles.menuToggle} />
+        <label htmlFor="menu-toggle" className={styles.hamburger}>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+        </label>
+        <ul className={styles.navLinks}>
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/" className={styles.link}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about" className={styles.link}>
+              About
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact" className={styles.link}>
+              Contact
+            </Link>
           </li>
         </ul>
-        <div className={styles.hamburger} onClick={toggleMenu}>
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
-        </div>
       </nav>
     </header>
   );

@@ -1,71 +1,121 @@
 /* app/components/Navbar.module.css */
 
+/* Header Styling */
+.header {
+  background-color: var(--primary-1);
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow-3);
+  position: relative;
+  z-index: 10;
+}
+
+/* Navbar Container */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #333;
-  color: #fff;
-  font-family: Arial, sans-serif;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
+/* Logo Styling */
 .logo a {
-  color: #fff;
-  font-size: 1.5rem;
+  color: var(--primary);
+  font-size: var(--text-large);
   font-weight: bold;
   text-decoration: none;
+  font-family: var(--heading-font);
+  transition: var(--transition);
+}
+.logo a:hover {
+  color: var(--primary-9);
 }
 
+/* Navigation Links */
 .navLinks {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   list-style: none;
 }
 
 .navLinks li a {
-  color: #fff;
+  color: var(--text-color);
+  font-size: var(--text-medium);
   text-decoration: none;
-  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-2);
+  transition: var(--transition);
+}
+.navLinks li a:hover {
+  background-color: var(--secondary-3);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
 }
 
-.navLinks li a:hover {
-  color: #ffd700; /* Gold color for hover effect */
+/* Menu Toggle (Mobile) */
+.menuToggle {
+  display: none;
 }
 
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  gap: 5px;
 }
-
 .hamburger .bar {
   width: 25px;
   height: 3px;
-  background-color: #fff;
-  margin: 4px 0;
-  transition: 0.3s;
+  background-color: var(--primary);
+  transition: var(--transition);
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-  .navLinks {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem 0;
-  }
-
-  .navLinks.showMenu {
-    display: flex;
-  }
-
   .hamburger {
     display: flex;
+  }
+
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%; /* Position below the header */
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-1);
+    padding: 1rem 0;
+    box-shadow: var(--shadow-4);
+    clip-path: inset(0 0 100% 0); /* Initially clipped */
+    opacity: 0;
+    transition: clip-path 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 9;
+  }
+
+  /* Show menu when checkbox is checked */
+  .menuToggle:checked + .hamburger + .navLinks {
+    clip-path: inset(0 0 0 0); /* Reveal the menu */
+    opacity: 1;
+  }
+
+  .navLinks li a {
+    font-size: var(--text-small);
+    padding: 1rem;
+  }
+}
+
+/* Ensure Links Are Visible on Larger Screens */
+@media (min-width: 769px) {
+  .navLinks {
+    display: flex;
+    transform: none; /* Remove transform effects */
+    clip-path: none; /* No clipping */
+    opacity: 1; /* Fully visible */
+    position: static; /* Normal positioning */
+    flex-direction: row; /* Horizontal layout */
+    background-color: transparent; /* No background for desktop */
+    padding: 0;
+    box-shadow: none; /* No shadow for desktop */
   }
 }

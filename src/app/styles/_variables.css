@@ -1,0 +1,87 @@
+:root {
+  /* Colors */
+  --primary: #213966;
+  --secondary: #58a645;
+  --success: #17c964;
+  --warning: #f5a524;
+  --error: #f31260;
+  --info: #3498db;
+  --white: #ffffff;
+  --black: #000000;
+  --inlet: #5cb85c;
+  --outlet: #428bca;
+  --discharge: #f0ad4e;
+  --drying: #d9534f;
+
+  /* Shades of primary */
+  --primary-1: #f0f3fa;
+  --primary-2: #e0e7f5;
+  --primary-3: #d1daf0;
+  --primary-4: #b2c1e6;
+  --primary-5: #93a8dc;
+  --primary-6: #748fd2;
+  --primary-7: #5676c8;
+  --primary-8: #3c5fb9;
+  --primary-9: #324f9a;
+  --primary-10: #28407b;
+  --primary-11: #1e305c;
+  --primary-12: #14203e;
+  --primary-13: #0a101f;
+
+  /* Shades of secondary */
+  --secondary-1: #c7e4bc;
+  --secondary-2: #a9d286;
+  --secondary-3: #8bc852;
+  --secondary-4: #6db01f;
+  --secondary-5: #4faa00;
+  --secondary-6: #58a645;
+  --secondary-7: #488b33;
+  --secondary-8: #397322;
+  --secondary-9: #2b5a10;
+  --secondary-10: #1d3d00;
+
+  /* Grayscale */
+  --gray-1: #ffffff;
+  --gray-2: #fafafa;
+  --gray-3: #f5f5f5;
+  --gray-4: #f0f0f0;
+  --gray-5: #d9d9d9;
+  --gray-6: #bfbfbf;
+  --gray-7: #8c8c8c;
+  --gray-8: #595959;
+  --gray-9: #434343;
+  --gray-10: #262626;
+  --gray-11: #1f1f1f;
+  --gray-12: #141414;
+  --gray-13: #000000;
+
+  /* Typography */
+  --body-font: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --heading-font: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-size-x-small: 1.3rem;
+  --font-size-small: 1.6rem;
+  --font-size-medium: 1.8rem;
+  --font-size-large: 2.2rem;
+  --font-size-x-large: 2.6rem;
+  --font-size-xx-large: 3.6rem;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+
+  /* Border Radius */
+  --radius-small: 4px;
+  --radius-medium: 8px;
+  --radius-large: 12px;
+
+  /* Shadows */
+  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  /* Transitions */
+  --transition: 0.3s ease-in-out;
+}

@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  padding: var(--spacing-small) var(--spacing-medium);
+  font-size: var(--font-size-small);
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  border-radius: var(--radius-medium);
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--primary-9);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-8);
+}

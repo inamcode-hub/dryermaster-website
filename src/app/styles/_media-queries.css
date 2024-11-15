@@ -1,0 +1,12 @@
+:root {
+  --breakpoint-xs: 320px; /* Small phones */
+  --breakpoint-sm: 480px; /* Phones */
+  --breakpoint-md: 768px; /* Tablets */
+  --breakpoint-lg: 1024px; /* Small desktops */
+  --breakpoint-xl: 1440px; /* Large desktops */
+
+  /* Aliases for clarity */
+  --breakpoint-phone: var(--breakpoint-sm);
+  --breakpoint-tablet: var(--breakpoint-md);
+  --breakpoint-desktop: var(--breakpoint-lg);
+}

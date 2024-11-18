@@ -8,8 +8,8 @@ const Navbar = ({ initialPath }: { initialPath: string }) => {
   // Navigation links
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    // { name: 'About', href: '/about' },
+    // { name: 'Contact', href: '/contact' },
   ];
 
   return (

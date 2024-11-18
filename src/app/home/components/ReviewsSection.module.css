@@ -1,0 +1,32 @@
+.reviews {
+  padding: 40px 20px;
+  background-color: var(--background-light);
+  color: var(--text-light);
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary-light);
+}
+
+.reviewList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review {
+  font-size: 1.2rem;
+  font-style: italic;
+  background: rgba(158, 141, 141, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.review footer {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--text-secondary-light);
+}

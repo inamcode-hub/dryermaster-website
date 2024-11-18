@@ -5,7 +5,8 @@ import Footer from './components/Footer';
 
 export const metadata: Metadata = {
   title: 'Dryer Master',
-  description: '',
+  description:
+    'Your trusted partner in optimizing drying processes with advanced monitoring, real-time adjustments, and detailed analytics.',
 };
 
 export default function RootLayout({

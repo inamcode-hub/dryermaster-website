@@ -1,7 +1,10 @@
+'use client';
 import Link from 'next/link';
 import styles from './Navbar.module.css';
+import { usePathname } from 'next/navigation';
 
-const Navbar = () => {
+const Navbar = ({ initialPath }: { initialPath: string }) => {
+  const pathname = usePathname() || initialPath;
   // Navigation links
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -29,7 +32,12 @@ const Navbar = () => {
         <ul className={styles.navLinks}>
           {navLinks.map((link, index) => (
             <li key={index}>
-              <Link href={link.href} className={styles.link}>
+              <Link
+                href={link.href}
+                className={`${styles.link} ${
+                  pathname === link.href ? styles.active : ''
+                }`}
+              >
                 {link.name}
               </Link>
             </li>

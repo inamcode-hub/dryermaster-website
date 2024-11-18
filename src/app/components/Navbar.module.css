@@ -55,6 +55,13 @@
   box-shadow: var(--shadow-1);
 }
 
+.active {
+  background-color: var(--secondary-3);
+  color: var(--white);
+  font-weight: bold;
+  border-bottom: 2px solid var(--secondary-3);
+}
+
 /* Mobile Menu Toggle */
 .menuToggle {
   display: none;

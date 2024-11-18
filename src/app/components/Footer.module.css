@@ -1,0 +1,65 @@
+.footer {
+  background-color: var(--primary-1); /* Background color from variables */
+  color: var(--text-light);
+  padding: 2rem 1rem;
+  font-family: var(--body-font);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.info {
+  grid-column: span 2; /* Takes extra space on larger screens */
+}
+
+.info h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.links ul,
+.social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links li,
+.social li {
+  margin-bottom: 0.5rem;
+}
+
+.links li a,
+.social li a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links li a:hover,
+.social li a:hover {
+  color: var(--primary-9);
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: var(--text-small);
+  border-top: 1px solid var(--secondary-3);
+  padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .info {
+    grid-column: span 1; /* Adapts to single-column layout */
+  }
+
+  .bottom {
+    font-size: var(--text-small);
+  }
+}

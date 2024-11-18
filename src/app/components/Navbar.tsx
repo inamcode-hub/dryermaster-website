@@ -2,12 +2,21 @@ import Link from 'next/link';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
+  // Navigation links
+  const navLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' },
+  ];
+
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
+        {/* Logo */}
         <div className={styles.logo}>
           <Link href="/">Dryer Master</Link>
         </div>
+
         {/* Hidden checkbox for toggling menu */}
         <input type="checkbox" id="menu-toggle" className={styles.menuToggle} />
         <label htmlFor="menu-toggle" className={styles.hamburger}>
@@ -15,22 +24,16 @@ const Navbar = () => {
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
         </label>
+
+        {/* Navigation Links */}
         <ul className={styles.navLinks}>
-          <li>
-            <Link href="/" className={styles.link}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className={styles.link}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className={styles.link}>
-              Contact
-            </Link>
-          </li>
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <Link href={link.href} className={styles.link}>
+                {link.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

@@ -8,8 +8,10 @@ const HeroSection = () => {
       <Image
         src="/images/hero.jpg"
         alt="Dryer Master hero banner"
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{
+          objectFit: 'cover', // Optional: Controls how the image fits its container
+        }}
         quality={90}
         priority={true}
       />

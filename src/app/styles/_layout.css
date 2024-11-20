@@ -1,7 +1,7 @@
 /* =========================== */
 /* layout has this .main class on <main> element */
 .main {
-  padding: var(--spacing-md);
+  margin: var(--spacing-medium);
 }
 /* =========================== */
 

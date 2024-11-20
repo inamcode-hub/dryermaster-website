@@ -13,8 +13,8 @@ const Home = () => {
   return (
     <main>
       <HeroSection />
-      <FeaturesSection />
-      <ReviewsSection />
+      {/* <FeaturesSection />
+      <ReviewsSection /> */}
     </main>
   );
 };

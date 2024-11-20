@@ -1,23 +1,26 @@
 import React from 'react';
-import Image from 'next/image';
 import styles from './HeroSection.module.css';
 
 const HeroSection = () => {
   return (
     <section className={styles.hero}>
-      <Image
-        src="/images/hero.jpg"
-        alt="Dryer Master hero banner"
-        fill
-        style={{
-          objectFit: 'cover', // Optional: Controls how the image fits its container
-        }}
-        quality={90}
-        priority={true}
-      />
+      <div className={styles.gradientBackground}></div>
       <div className={styles.content}>
-        <h1>Welcome to Dryer Master</h1>
-        <p>Your trusted partner in optimizing drying processes.</p>
+        <h1 className={styles.title}>
+          Revolutionize <span>Your Drying Process</span>
+        </h1>
+        <p className={styles.subtitle}>
+          Enhance precision and efficiency with innovative drying solutions
+          tailored to your needs.
+        </p>
+        <div className={styles.buttons}>
+          <a href="/contact" className="btn btn-primary">
+            Get Started
+          </a>
+          <a href="/learn-more" className="btn btn-outline">
+            Learn More
+          </a>
+        </div>
       </div>
     </section>
   );

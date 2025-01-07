@@ -8,7 +8,7 @@ export default function Footer() {
       <div className={styles.container}>
         {/* Company Info */}
         <div className={styles.info}>
-          <h3>Dryer Master</h3>
+          <span>Dryer Master</span>
           <p>
             Helping optimize drying processes with advanced monitoring,
             real-time adjustments, and analytics in Kitchener and beyond.
@@ -25,7 +25,7 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div className={styles.links}>
-          <h4>Quick Links</h4>
+          <span>Quick Links</span>
           <ul>
             <li>
               <Link href="/">Home</Link>
@@ -41,7 +41,7 @@ export default function Footer() {
 
         {/* Social Links */}
         <div className={styles.social}>
-          <h4>Follow Us</h4>
+          <span>Follow Us</span>
           <ul>
             <li>
               <Link href="https://facebook.com" target="_blank" rel="noopener">

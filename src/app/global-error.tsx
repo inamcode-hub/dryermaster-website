@@ -5,7 +5,7 @@ import React from 'react';
 function GlobalError() {
   return (
     <div>
-      <h1>Error - Something went wrong - Global</h1>
+      <h1>Error - Something went wrong - Global-Error</h1>
     </div>
   );
 }

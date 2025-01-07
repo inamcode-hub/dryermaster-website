@@ -17,11 +17,6 @@
   grid-column: span 2; /* Takes extra space on larger screens */
 }
 
-.info h3 {
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-}
-
 .links ul,
 .social ul {
   list-style: none;
@@ -32,6 +27,14 @@
 .links li,
 .social li {
   margin-bottom: 0.5rem;
+}
+.info span,
+.links span,
+.social span {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-size: var(--font-size-heading-md);
+  font-weight: 700;
 }
 
 .links li a,

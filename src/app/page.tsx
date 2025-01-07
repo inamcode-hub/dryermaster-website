@@ -1,7 +1,7 @@
 import React from 'react';
-import HeroSection from '@/app/home/components/HeroSection';
-import FeaturesSection from '@/app/home/components/FeaturesSection';
-import ReviewsSection from '@/app/home/components/ReviewsSection';
+// import HeroSection from '@/app/home/components/HeroSection';
+// import FeaturesSection from '@/app/home/components/FeaturesSection';
+// import ReviewsSection from '@/app/home/components/ReviewsSection';
 
 export const metadata = {
   title: 'Dryer Master | Home',
@@ -12,9 +12,10 @@ export const metadata = {
 const Home = () => {
   return (
     <main>
-      <HeroSection />
+      {/* <HeroSection />
       <FeaturesSection />
-      <ReviewsSection />
+      <ReviewsSection /> */}
+      <h1>Home page</h1>
     </main>
   );
 };

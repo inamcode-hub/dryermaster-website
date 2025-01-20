@@ -11,7 +11,7 @@ This document outlines the roadmap for building a static website using **Next.js
 - Hosting the static site with **Nginx**.
 - Uploading static files to **Amazon S3** for scalable storage.
 - Using **AWS CloudFront** as a CDN for global content delivery.
-- Integrating **Contentful** as a headless CMS for dynamic content management.
+- Integrating **Strapi** as a headless CMS for dynamic content management.
 - Adding **HubSpot Live Chat** for customer engagement.
 - Leveraging **HubSpot** and **Google Analytics** for traffic analysis and user behavior insights.
 

@@ -3,7 +3,7 @@ import '@/app/styles/globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { headers } from 'next/headers';
-
+import ScriptManager from './components/ScriptManager';
 export const metadata: Metadata = {
   title: 'Dryer Master',
   description:
@@ -42,6 +42,7 @@ export default async function RootLayout({
         <link rel="manifest" href="/icons/site.webmanifest" />
       </head>
       <body>
+        <ScriptManager />
         <Navbar initialPath={currentPath} />
         <main className="main">{children}</main>
         <Footer />
